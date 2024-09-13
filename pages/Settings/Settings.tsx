@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
 import {text, colors} from '../../styles';
-import SystemListItem from '../../components/SystemListItem';
+import SystemListItem from './components/SystemListItem';
 
 import Logo from '../../assets/logo.svg';
 
@@ -28,7 +28,7 @@ const Settings: React.FC = () => {
           ACCOUNT
         </Text>
         <View style={[styles.account, colors.bgLightOrange]}>
-          <Logo width="40px" height="40px"/>
+          <Logo width={40} height={40}/>
           <Text style={[text.popins_600, text.size_14_20, text.textMainColor]}>Richard Greggain</Text>
           <Arrow style={styles.account_arrow}/>
         </View>
@@ -44,12 +44,6 @@ const Settings: React.FC = () => {
     </View>
   );
 };
-/*
-<SystemListItem title="Contact support" image={contact} />
-        <SystemListItem title="Terms of use" image={terms} />
-        <SystemListItem title="Privacy Policy" image={privacy} />
-        <SystemListItem title="Log out" image={log_out} />
-*/
 
 const styles = StyleSheet.create({
   container: {

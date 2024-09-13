@@ -5,14 +5,15 @@ import {
   View,
 } from 'react-native';
 
-import Settings from './pages/Settings/Settings';
+//import Settings from './pages/Settings/Settings';
+import Account from './pages/Account/Account';
 
 function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <Settings/>
+        <Account />
       </View>
     </SafeAreaView>
   );

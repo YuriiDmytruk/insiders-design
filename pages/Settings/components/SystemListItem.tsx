@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import {text} from '../styles';
+import {text} from '../../../styles';
 
 type Props = {
   image: React.ComponentType<React.SVGProps<SVGSVGElement>>;
@@ -11,7 +11,7 @@ type Props = {
 const SystemListItem: React.FC<Props>  = ({image: Image, title}) => {
   return (
     <View style={styles.container}>
-        <Image width="20px" height="20px"/>
+        <Image width={20} height={20}/>
         <Text style={[text.popins_500, text.size_14_20, text.textMainColor]}>{title}</Text>
     </View>
   );
