@@ -45,6 +45,10 @@ export const text = StyleSheet.create({
     fontSize: 12,
     lineHeight: 20,
   },
+  size_12_18: {
+    fontSize: 12,
+    lineHeight: 18,
+  },
   size_12_16: {
     fontSize: 12,
     lineHeight: 16,
