@@ -100,6 +100,7 @@ const styles = StyleSheet.create({
   },
   button_container: {
     width: '100%',
+    marginBottom: 14,
   },
   input_container:{
     marginTop: 22,
