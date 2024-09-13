@@ -15,6 +15,7 @@ type Props = {
 const LogoCamera: React.FC<Props> = ({ Logo, logo_width, logo_height, bottom, right }) => {
   const cameraContainerStyle: ViewStyle = {
     ...styles.camera_container,
+    backgroundColor: colors.white,
     bottom: bottom,
     right: right,
   };
@@ -22,7 +23,7 @@ const LogoCamera: React.FC<Props> = ({ Logo, logo_width, logo_height, bottom, ri
   return (
     <View style={styles.container}>
       <Logo width={logo_width} height={logo_height} />
-      <View style={[cameraContainerStyle, colors.bgWhite]}>
+      <View style={[cameraContainerStyle]}>
         <Camera />
       </View>
     </View>

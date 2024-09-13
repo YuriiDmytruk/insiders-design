@@ -1,19 +1,23 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, ViewStyle} from 'react-native';
 
 import {text, colors} from '../../styles';
 import SystemListItem from './components/SystemListItem';
 
 import Logo from '../../assets/logo.svg';
-
 import Contact from '../../assets/setings/contact.svg';
 import Terms from '../../assets/setings/terms.svg';
 import Privacy from '../../assets/setings/privacy.svg';
 import LogOut from '../../assets/setings/log-out.svg';
-
 import Arrow from '../../assets/setings/keyboard-arrow-right.svg';
 
 const Settings: React.FC = () => {
+
+  const accountContainerStyle: ViewStyle = {
+    ...styles.account,
+    backgroundColor: colors.lightOrange,
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.title_container}>
@@ -27,7 +31,7 @@ const Settings: React.FC = () => {
           style={[text.popins_500, text.size_12_16, text.textSecondaryColor]}>
           ACCOUNT
         </Text>
-        <View style={[styles.account, colors.bgLightOrange]}>
+        <View style={[accountContainerStyle]}>
           <Logo width={40} height={40}/>
           <Text style={[text.popins_600, text.size_14_20, text.textMainColor]}>Richard Greggain</Text>
           <Arrow style={styles.account_arrow}/>

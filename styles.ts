@@ -66,14 +66,8 @@ export const text = StyleSheet.create({
   },
 });
 
-export const colors = StyleSheet.create({
-  bgWhite: {
-    backgroundColor: '#FFFFFF',
-  },
-  bgOrange: {
-    backgroundColor: '#EE7325',
-  },
-  bgLightOrange: {
-    backgroundColor: '#FCF4ED',
-  },
-});
+export const colors = {
+  white: '#FFFFFF',
+  orange: '#EE7325',
+  lightOrange: '#FCF4ED',
+};

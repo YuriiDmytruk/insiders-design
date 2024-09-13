@@ -17,11 +17,12 @@ type Props = {
   handlePress?: () => void,
 };
 
-const ButtonOrange: React.FC<Props> = ({title, Image, marginTop, paddingHorizontal, paddingVertical, handlePress}) => {
+const ButtonWhite: React.FC<Props> = ({title, Image, marginTop, paddingHorizontal, paddingVertical, handlePress}) => {
 
     const buttonContainerStyle: ViewStyle = {
         ...styles.button,
-        backgroundColor: colors.orange,
+        borderColor: colors.orange,
+        backgroundColor: colors.white,
         marginTop: marginTop,
         paddingHorizontal: paddingHorizontal,
         paddingVertical: paddingVertical,
@@ -32,7 +33,7 @@ const ButtonOrange: React.FC<Props> = ({title, Image, marginTop, paddingHorizont
         {Image && (
             <Image width={20} height={20} />
         )}
-        <Text style={[text.popins_700, text.size_14_20, text.textWhiteColor]}>{title}</Text>
+        <Text style={[text.popins_700, text.size_14_20, text.textOrangeColor]}>{title}</Text>
     </TouchableOpacity>
   );
 };
@@ -42,8 +43,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderRadius: 40,
+    borderWidth: 1.5,
     gap: 10,
   },
 });
 
-export default ButtonOrange;
+export default ButtonWhite;
