@@ -2,18 +2,17 @@ import React from 'react';
 import {
   SafeAreaView,
   StyleSheet,
-  Text,
   View,
 } from 'react-native';
+
+import Settings from './pages/Settings/Settings';
 
 function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <Text>
-          Hello
-        </Text>
+        <Settings/>
       </View>
     </SafeAreaView>
   );
@@ -21,8 +20,6 @@ function App(): React.JSX.Element {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 32,
-    paddingHorizontal: 24,
   },
 });
 

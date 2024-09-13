@@ -2,50 +2,50 @@ import {StyleSheet} from 'react-native';
 
 export const text = StyleSheet.create({
   popins_700: {
-    fontFamily: 'popins',
-    fontWeight: 700,
+    fontFamily: 'Poppins-Bold',
+    fontWeight: '700',
   },
   popins_600: {
-    fontFamily: 'popins',
-    fontWeight: 600,
+    fontFamily: 'Poppins-SemiBold',
+    fontWeight: '600',
   },
   popins_500: {
-    fontFamily: 'popins',
-    fontWeight: 500,
+    fontFamily: 'Poppins-Medium',
+    fontWeight: '500',
   },
   popins_400: {
-    fontFamily: 'popins',
-    fontWeight: 400,
+    fontFamily: 'Poppins-Regular',
+    fontWeight: '400',
   },
-  size_24_32:{
+  size_24_32: {
     fontSize: 24,
     lineHeight: 32,
   },
-  size_20_28:{
+  size_20_28: {
     fontSize: 20,
     lineHeight: 28,
   },
-  size_18_24:{
+  size_18_24: {
     fontSize: 18,
     lineHeight: 24,
   },
-  size_16_16:{
+  size_16_16: {
     fontSize: 16,
     lineHeight: 16,
   },
-  size_14_20:{
+  size_14_20: {
     fontSize: 14,
     lineHeight: 20,
   },
-  size_14_14:{
+  size_14_14: {
     fontSize: 14,
     lineHeight: 14,
   },
-  size_12_20:{
+  size_12_20: {
     fontSize: 12,
     lineHeight: 20,
   },
-  size_12_16:{
+  size_12_16: {
     fontSize: 12,
     lineHeight: 16,
   },
@@ -61,19 +61,19 @@ export const text = StyleSheet.create({
   textWhiteColor: {
     color: '#FFFFFF',
   },
-  textOrangeColor:{
+  textOrangeColor: {
     color: '#EE7325',
   },
 });
 
 export const colors = StyleSheet.create({
-    bgWhite: {
-        backgroundColor: '#FFFFFF',
-    },
-    bgOrange: {
-        backgroundColor: '#EE7325',
-    },
-    bgLightOrange: {
-        backgroundColor: '#FCF4ED',
-    },
+  bgWhite: {
+    backgroundColor: '#FFFFFF',
+  },
+  bgOrange: {
+    backgroundColor: '#EE7325',
+  },
+  bgLightOrange: {
+    backgroundColor: '#FCF4ED',
+  },
 });
